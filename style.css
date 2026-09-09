@@ -153,6 +153,53 @@ section .sub { text-align: center; color: var(--text-soft); margin-bottom: 3rem;
 .lista-dor { list-style: none; padding: 0; margin-top: 2rem; }
 .lista-dor li { padding: 0.75rem 0; border-bottom: 1px solid rgba(245,242,235,0.1); font-size: 1.05rem; }
 
+.dor-card {
+    background: var(--alert-bg);
+    border: 1px solid var(--alert-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+}
+
+.dor-card strong {
+    display: block;
+    color: var(--alert-text);
+    margin-bottom: 0.5rem;
+}
+
+.dor-card > span {
+    font-size: 0.85rem;
+    color: var(--alert-text);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.dor-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dor-card li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--alert-border);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--alert-text); /* ← ADICIONAR ESTA LINHA */
+}
+
+.dor-card li:last-child {
+    border-bottom: none;
+}
+
+.dor-card li span {
+    color: var(--alert-text);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 /* SOLUÇÃO */
 .solucao { text-align: center; padding: 3rem 0; }
 .solucao p { max-width: 700px; margin: 0 auto; font-size: 1.1rem; }
